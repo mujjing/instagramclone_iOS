@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB93D52D2664E1210006E60B /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB93D52C2664E1210006E60B /* ProfileTableViewCell.swift */; };
+		DB93D5302664E8960006E60B /* EditProfileViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB93D52F2664E8960006E60B /* EditProfileViewController.storyboard */; };
+		DB93D5322664E8A90006E60B /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB93D5312664E8A90006E60B /* EditProfileViewController.swift */; };
+		DB93D5352664EBCD0006E60B /* EditProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB93D5342664EBCD0006E60B /* EditProfileTableViewCell.swift */; };
 		DBEC007E2663E86F00A789E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEC007D2663E86F00A789E3 /* AppDelegate.swift */; };
 		DBEC00802663E86F00A789E3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEC007F2663E86F00A789E3 /* SceneDelegate.swift */; };
 		DBEC00872663E87200A789E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBEC00862663E87200A789E3 /* Assets.xcassets */; };
@@ -25,6 +29,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DB93D52C2664E1210006E60B /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
+		DB93D52F2664E8960006E60B /* EditProfileViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EditProfileViewController.storyboard; sourceTree = "<group>"; };
+		DB93D5312664E8A90006E60B /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		DB93D5342664EBCD0006E60B /* EditProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileTableViewCell.swift; sourceTree = "<group>"; };
 		DBEC007A2663E86F00A789E3 /* instagramclone_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = instagramclone_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBEC007D2663E86F00A789E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBEC007F2663E86F00A789E3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +63,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DB93D52B2664E0BD0006E60B /* tableView */ = {
+			isa = PBXGroup;
+			children = (
+				DB93D52C2664E1210006E60B /* ProfileTableViewCell.swift */,
+			);
+			path = tableView;
+			sourceTree = "<group>";
+		};
+		DB93D52E2664E8840006E60B /* EditProfile */ = {
+			isa = PBXGroup;
+			children = (
+				DB93D5332664EBA40006E60B /* tableView */,
+				DB93D52F2664E8960006E60B /* EditProfileViewController.storyboard */,
+				DB93D5312664E8A90006E60B /* EditProfileViewController.swift */,
+			);
+			path = EditProfile;
+			sourceTree = "<group>";
+		};
+		DB93D5332664EBA40006E60B /* tableView */ = {
+			isa = PBXGroup;
+			children = (
+				DB93D5342664EBCD0006E60B /* EditProfileTableViewCell.swift */,
+			);
+			path = tableView;
+			sourceTree = "<group>";
+		};
 		DBEC00712663E86F00A789E3 = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +159,8 @@
 		DBEC00952663E8CF00A789E3 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				DB93D52E2664E8840006E60B /* EditProfile */,
+				DB93D52B2664E0BD0006E60B /* tableView */,
 				DBEC00A82663EE7A00A789E3 /* ProfileViewController.storyboard */,
 				DBEC00AA2663EE8300A789E3 /* ProfileViewController.swift */,
 			);
@@ -215,6 +251,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB93D5302664E8960006E60B /* EditProfileViewController.storyboard in Resources */,
 				DBEC009D2663EC2000A789E3 /* Tabbar.storyboard in Resources */,
 				DBEC00A92663EE7A00A789E3 /* ProfileViewController.storyboard in Resources */,
 				DBEC008A2663E87200A789E3 /* LaunchScreen.storyboard in Resources */,
@@ -234,12 +271,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBEC00AB2663EE8300A789E3 /* ProfileViewController.swift in Sources */,
+				DB93D52D2664E1210006E60B /* ProfileTableViewCell.swift in Sources */,
 				DBEC00A62663EE6700A789E3 /* NotificationsViewController.swift in Sources */,
+				DB93D5352664EBCD0006E60B /* EditProfileTableViewCell.swift in Sources */,
 				DBEC00B02663EE9B00A789E3 /* AddViewController.swift in Sources */,
 				DBEC007E2663E86F00A789E3 /* AppDelegate.swift in Sources */,
 				DBEC00802663E86F00A789E3 /* SceneDelegate.swift in Sources */,
 				DBEC00A22663EE4F00A789E3 /* SearchViewController.swift in Sources */,
 				DBEC009A2663E91200A789E3 /* HomeViewController.swift in Sources */,
+				DB93D5322664E8A90006E60B /* EditProfileViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
