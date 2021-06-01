@@ -11,6 +11,10 @@
 		DB93D5302664E8960006E60B /* EditProfileViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB93D52F2664E8960006E60B /* EditProfileViewController.storyboard */; };
 		DB93D5322664E8A90006E60B /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB93D5312664E8A90006E60B /* EditProfileViewController.swift */; };
 		DB93D5352664EBCD0006E60B /* EditProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB93D5342664EBCD0006E60B /* EditProfileTableViewCell.swift */; };
+		DBD62D53266620E000884E38 /* SignInViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBD62D52266620E000884E38 /* SignInViewController.storyboard */; };
+		DBD62D55266620F300884E38 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD62D54266620F300884E38 /* SignInViewController.swift */; };
+		DBD62D57266620FF00884E38 /* SignUpViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBD62D56266620FF00884E38 /* SignUpViewController.storyboard */; };
+		DBD62D592666210C00884E38 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD62D582666210C00884E38 /* SignUpViewController.swift */; };
 		DBEC007E2663E86F00A789E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEC007D2663E86F00A789E3 /* AppDelegate.swift */; };
 		DBEC00802663E86F00A789E3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEC007F2663E86F00A789E3 /* SceneDelegate.swift */; };
 		DBEC00872663E87200A789E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBEC00862663E87200A789E3 /* Assets.xcassets */; };
@@ -33,6 +37,10 @@
 		DB93D52F2664E8960006E60B /* EditProfileViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EditProfileViewController.storyboard; sourceTree = "<group>"; };
 		DB93D5312664E8A90006E60B /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		DB93D5342664EBCD0006E60B /* EditProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileTableViewCell.swift; sourceTree = "<group>"; };
+		DBD62D52266620E000884E38 /* SignInViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignInViewController.storyboard; sourceTree = "<group>"; };
+		DBD62D54266620F300884E38 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		DBD62D56266620FF00884E38 /* SignUpViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUpViewController.storyboard; sourceTree = "<group>"; };
+		DBD62D582666210C00884E38 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		DBEC007A2663E86F00A789E3 /* instagramclone_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = instagramclone_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBEC007D2663E86F00A789E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBEC007F2663E86F00A789E3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +97,24 @@
 			path = tableView;
 			sourceTree = "<group>";
 		};
+		DBD62D50266620BA00884E38 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				DBD62D52266620E000884E38 /* SignInViewController.storyboard */,
+				DBD62D54266620F300884E38 /* SignInViewController.swift */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		DBD62D51266620CD00884E38 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				DBD62D56266620FF00884E38 /* SignUpViewController.storyboard */,
+				DBD62D582666210C00884E38 /* SignUpViewController.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
 		DBEC00712663E86F00A789E3 = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +145,8 @@
 		DBEC00912663E8B500A789E3 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				DBD62D51266620CD00884E38 /* SignUp */,
+				DBD62D50266620BA00884E38 /* SignIn */,
 				DBEC009B2663EC0600A789E3 /* Tabbar */,
 				DBEC00AC2663EE8800A789E3 /* Add */,
 				DBEC00952663E8CF00A789E3 /* Profile */,
@@ -252,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB93D5302664E8960006E60B /* EditProfileViewController.storyboard in Resources */,
+				DBD62D53266620E000884E38 /* SignInViewController.storyboard in Resources */,
 				DBEC009D2663EC2000A789E3 /* Tabbar.storyboard in Resources */,
 				DBEC00A92663EE7A00A789E3 /* ProfileViewController.storyboard in Resources */,
 				DBEC008A2663E87200A789E3 /* LaunchScreen.storyboard in Resources */,
@@ -260,6 +289,7 @@
 				DBEC00872663E87200A789E3 /* Assets.xcassets in Resources */,
 				DBEC00A02663EE4700A789E3 /* SearchViewController.storyboard in Resources */,
 				DBEC00982663E90500A789E3 /* HomeViewController.storyboard in Resources */,
+				DBD62D57266620FF00884E38 /* SignUpViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,11 +300,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBD62D55266620F300884E38 /* SignInViewController.swift in Sources */,
 				DBEC00AB2663EE8300A789E3 /* ProfileViewController.swift in Sources */,
 				DB93D52D2664E1210006E60B /* ProfileTableViewCell.swift in Sources */,
 				DBEC00A62663EE6700A789E3 /* NotificationsViewController.swift in Sources */,
 				DB93D5352664EBCD0006E60B /* EditProfileTableViewCell.swift in Sources */,
 				DBEC00B02663EE9B00A789E3 /* AddViewController.swift in Sources */,
+				DBD62D592666210C00884E38 /* SignUpViewController.swift in Sources */,
 				DBEC007E2663E86F00A789E3 /* AppDelegate.swift in Sources */,
 				DBEC00802663E86F00A789E3 /* SceneDelegate.swift in Sources */,
 				DBEC00A22663EE4F00A789E3 /* SearchViewController.swift in Sources */,
