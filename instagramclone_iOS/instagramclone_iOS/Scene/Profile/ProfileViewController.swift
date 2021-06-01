@@ -6,6 +6,9 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
+import FirebaseStorage
 
 class ProfileViewController: UIViewController {
 
@@ -17,7 +20,23 @@ class ProfileViewController: UIViewController {
         tableView.dataSource = self
         navigationItem.title = "username"
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        handleNotAuthenticated()
+    }
     
+    private func handleNotAuthenticated(){
+        //Check auth status
+        if Auth.auth().currentUser == nil{
+            //show log in
+        self.tabBarController?.selectedIndex = 0
+        let sb = UIStoryboard(name: "SignInViewController", bundle: nil)
+        guard let vc = sb.instantiateViewController(withIdentifier: "SignInViewController") as? SignInViewController else { fatalError() }
+        let nav = UINavigationController(rootViewController: vc)
+        nav.modalPresentationStyle = .fullScreen
+        present(nav, animated: false, completion: nil)
+        }
+    }
 
 }
 
