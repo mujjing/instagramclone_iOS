@@ -27,8 +27,6 @@ class ProfileTableViewCell: UITableViewCell {
     @objc func tappedEditProfileBtn() {
         let sb = UIStoryboard(name: "EditProfileViewController", bundle: nil)
         guard let vc = sb.instantiateViewController(withIdentifier: "EditProfileViewController") as? EditProfileViewController else { fatalError() }
-        let nav = UINavigationController(rootViewController: vc)
-        nav.modalPresentationStyle = .fullScreen
-        delegate?.present(nav, animated: true, completion: nil)
+        delegate?.navigationController?.pushViewController(vc, animated: true)
     }
 }

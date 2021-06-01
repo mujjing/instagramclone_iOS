@@ -6,6 +6,9 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
+import FirebaseStorage
 
 class HomeViewController: UIViewController {
 
@@ -14,6 +17,23 @@ class HomeViewController: UIViewController {
         
         addLeftBarIcon(named: "instagram")
         addRightBarIcon(named: "send")
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        handleNotAuthenticated()
+    }
+    
+    private func handleNotAuthenticated(){
+        //Check auth status
+        if Auth.auth().currentUser == nil{
+            //show log in
+        let sb = UIStoryboard(name: "SignInViewController", bundle: nil)
+        guard let vc = sb.instantiateViewController(withIdentifier: "SignInViewController") as? SignInViewController else { fatalError() }
+        let nav = UINavigationController(rootViewController: vc)
+        nav.modalPresentationStyle = .fullScreen
+        present(nav, animated: false, completion: nil)
+        }
     }
     
     @objc func gotSettingPage(){
