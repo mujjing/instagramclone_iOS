@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		37F1D3D81088A3E282C8B4F7 /* Pods_instagramclone_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C6E01FE450A1A8B8FA850E3 /* Pods_instagramclone_iOS.framework */; };
+		DB3D773B2667A2DD00F6A360 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3D773A2667A2DD00F6A360 /* SearchTableViewCell.swift */; };
+		DB3D773E2667A63A00F6A360 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3D773D2667A63A00F6A360 /* User.swift */; };
+		DB3D77402668815B00F6A360 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3D773F2668815B00F6A360 /* SearchViewModel.swift */; };
 		DB93D52D2664E1210006E60B /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB93D52C2664E1210006E60B /* ProfileTableViewCell.swift */; };
 		DB93D5302664E8960006E60B /* EditProfileViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB93D52F2664E8960006E60B /* EditProfileViewController.storyboard */; };
 		DB93D5322664E8A90006E60B /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB93D5312664E8A90006E60B /* EditProfileViewController.swift */; };
@@ -39,6 +42,9 @@
 		2F2B8C85D7711563F8557955 /* Pods-instagramclone_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instagramclone_iOS.release.xcconfig"; path = "Target Support Files/Pods-instagramclone_iOS/Pods-instagramclone_iOS.release.xcconfig"; sourceTree = "<group>"; };
 		4F218FE4F422D0F744DF9823 /* Pods-instagramclone_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instagramclone_iOS.debug.xcconfig"; path = "Target Support Files/Pods-instagramclone_iOS/Pods-instagramclone_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		7C6E01FE450A1A8B8FA850E3 /* Pods_instagramclone_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_instagramclone_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB3D773A2667A2DD00F6A360 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		DB3D773D2667A63A00F6A360 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		DB3D773F2668815B00F6A360 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		DB93D52C2664E1210006E60B /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
 		DB93D52F2664E8960006E60B /* EditProfileViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EditProfileViewController.storyboard; sourceTree = "<group>"; };
 		DB93D5312664E8A90006E60B /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
@@ -95,6 +101,22 @@
 				7C6E01FE450A1A8B8FA850E3 /* Pods_instagramclone_iOS.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DB3D77392667A2BE00F6A360 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				DB3D773A2667A2DD00F6A360 /* SearchTableViewCell.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		DB3D773C2667A62300F6A360 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DB3D773D2667A63A00F6A360 /* User.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		DB93D52B2664E0BD0006E60B /* tableView */ = {
@@ -170,6 +192,7 @@
 		DBEC007C2663E86F00A789E3 /* instagramclone_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				DB3D773C2667A62300F6A360 /* Model */,
 				DBBEF2972666612B00FEDA50 /* Extension */,
 				DBEC00962663E8D600A789E3 /* Resources */,
 				DBEC00912663E8B500A789E3 /* Scene */,
@@ -207,8 +230,10 @@
 		DBEC00932663E8C200A789E3 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				DB3D77392667A2BE00F6A360 /* TableView */,
 				DBEC009F2663EE4700A789E3 /* SearchViewController.storyboard */,
 				DBEC00A12663EE4F00A789E3 /* SearchViewController.swift */,
+				DB3D773F2668815B00F6A360 /* SearchViewModel.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -385,17 +410,20 @@
 			files = (
 				DBD62D55266620F300884E38 /* SignInViewController.swift in Sources */,
 				DBBEF2992666613F00FEDA50 /* UIColor.swift in Sources */,
+				DB3D77402668815B00F6A360 /* SearchViewModel.swift in Sources */,
 				DBEC00AB2663EE8300A789E3 /* ProfileViewController.swift in Sources */,
 				DB93D52D2664E1210006E60B /* ProfileTableViewCell.swift in Sources */,
 				DBEC00A62663EE6700A789E3 /* NotificationsViewController.swift in Sources */,
 				DB93D5352664EBCD0006E60B /* EditProfileTableViewCell.swift in Sources */,
 				DBEC00B02663EE9B00A789E3 /* AddViewController.swift in Sources */,
 				DBD62D592666210C00884E38 /* SignUpViewController.swift in Sources */,
+				DB3D773E2667A63A00F6A360 /* User.swift in Sources */,
 				DBEC007E2663E86F00A789E3 /* AppDelegate.swift in Sources */,
 				DBEC00802663E86F00A789E3 /* SceneDelegate.swift in Sources */,
 				DBEC00A22663EE4F00A789E3 /* SearchViewController.swift in Sources */,
 				DBEC009A2663E91200A789E3 /* HomeViewController.swift in Sources */,
 				DB93D5322664E8A90006E60B /* EditProfileViewController.swift in Sources */,
+				DB3D773B2667A2DD00F6A360 /* SearchTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
